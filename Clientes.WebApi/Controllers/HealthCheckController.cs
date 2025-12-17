@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace Clientes.WebApi.Controllers
 {
-    public class HealthCheckController : ApiController
+    [ApiController]
+    [Route("api/[controller]")]
+    public class HealthCheckController : ControllerBase
     {
         [HttpGet]
-        public IHttpActionResult Get()
+        public IActionResult Get()
         {
             return Ok("Service is running");
         }

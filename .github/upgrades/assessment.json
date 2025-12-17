@@ -1,0 +1,2178 @@
+{
+  "settings": {
+    "components": {
+      "code": false,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2025-12-17T13:33:42.4725255Z",
+  "analysisEndTime": "2025-12-17T13:34:12.4462075Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 11,
+      "incidents": 92,
+      "effort": 92
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 82,
+        "Optional": 0,
+        "Potential": 10,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 12,
+        "Project": 2,
+        "Feature": 3,
+        "Api": 75
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "Clientes.WebApi\\Clientes.WebApi.csproj",
+      "startingProject": true,
+      "issues": 10,
+      "storyPoints": 92,
+      "properties": {
+        "appName": "Clientes.WebApi",
+        "projectKind": "Wap",
+        "frameworks": [
+          "net481"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": false,
+        "numberOfFiles": 14,
+        "numberOfCodeFiles": 12,
+        "linesTotal": 479,
+        "linesOfCode": 425,
+        "totalApiScanned": 390,
+        "minLinesOfCodeToChange": 75,
+        "maxLinesOfCodeToChange": 75
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "a045183e-b5e5-4e6b-bc36-bb2c7c9cb4e1",
+          "ruleId": "NuGet.0001",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Autofac.WebApi2, 6.2.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Autofac.WebApi2, 6.2.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Clientes.WebApi.csproj",
+            "snippet": "Autofac.WebApi2, 6.2.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Autofac.WebApi2, 6.2.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Autofac.WebApi2 6.2.0",
+            "properties": {
+              "PackageId": "Autofac.WebApi2",
+              "PackageVersion": "6.2.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "e4c2ff43-e20e-42ba-bf4b-7bc1f7123c7e",
+          "ruleId": "NuGet.0003",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebApi, 5.3.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.AspNet.WebApi, 5.3.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Clientes.WebApi.csproj",
+            "snippet": "Microsoft.AspNet.WebApi, 5.3.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.AspNet.WebApi, 5.3.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.AspNet.WebApi 5.3.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi",
+              "PackageVersion": "5.3.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "ff6f00e7-dd99-479c-a6a5-13340e9f02c2",
+          "ruleId": "NuGet.0001",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebApi.Core, 5.3.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.WebApi.Core, 5.3.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Clientes.WebApi.csproj",
+            "snippet": "Microsoft.AspNet.WebApi.Core, 5.3.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.WebApi.Core, 5.3.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.WebApi.Core 5.3.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.Core",
+              "PackageVersion": "5.3.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "ec941c36-0e1a-4787-a548-54cc0b46d65f",
+          "ruleId": "NuGet.0001",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebApi.WebHost, 5.3.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.WebApi.WebHost, 5.3.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Clientes.WebApi.csproj",
+            "snippet": "Microsoft.AspNet.WebApi.WebHost, 5.3.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.WebApi.WebHost, 5.3.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.WebApi.WebHost 5.3.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.WebHost",
+              "PackageVersion": "5.3.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "c8691d37-29c8-4cc3-a211-659d645b5502",
+          "ruleId": "NuGet.0002",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Bcl.AsyncInterfaces, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Bcl.AsyncInterfaces, and replace with new package Microsoft.Bcl.AsyncInterfaces 10.0.1",
+              "protected": "Microsoft.Bcl.AsyncInterfaces, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Bcl.AsyncInterfaces, and replace with new package Microsoft.Bcl.AsyncInterfaces 10.0.1"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Clientes.WebApi.csproj",
+            "snippet": "Microsoft.Bcl.AsyncInterfaces, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Bcl.AsyncInterfaces, and replace with new package Microsoft.Bcl.AsyncInterfaces 10.0.1",
+            "protectedSnippet": "Microsoft.Bcl.AsyncInterfaces, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Bcl.AsyncInterfaces, and replace with new package Microsoft.Bcl.AsyncInterfaces 10.0.1",
+            "label": "Microsoft.Bcl.AsyncInterfaces 8.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Bcl.AsyncInterfaces",
+              "PackageVersion": "8.0.0",
+              "PackageNewVersion": "10.0.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "f260d531-449a-49a0-a202-137f2cb6029a",
+          "ruleId": "NuGet.0003",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, 2.0.1\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, 2.0.1\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Clientes.WebApi.csproj",
+            "snippet": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, 2.0.1\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, 2.0.1\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform 2.0.1",
+            "properties": {
+              "PackageId": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
+              "PackageVersion": "2.0.1",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "7f483799-332e-4361-91d7-5fbe7916a1a6",
+          "ruleId": "NuGet.0003",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Buffers, 4.5.1\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "System.Buffers, 4.5.1\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Clientes.WebApi.csproj",
+            "snippet": "System.Buffers, 4.5.1\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "System.Buffers, 4.5.1\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "System.Buffers 4.5.1",
+            "properties": {
+              "PackageId": "System.Buffers",
+              "PackageVersion": "4.5.1",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "451d7ff4-3111-406a-a2cd-8d54c897d604",
+          "ruleId": "NuGet.0002",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Diagnostics.DiagnosticSource, 8.0.1\n\nRecommendation:\n\nRemove System.Diagnostics.DiagnosticSource, and replace with new package System.Diagnostics.DiagnosticSource 10.0.1",
+              "protected": "System.Diagnostics.DiagnosticSource, 8.0.1\n\nRecommendation:\n\nRemove System.Diagnostics.DiagnosticSource, and replace with new package System.Diagnostics.DiagnosticSource 10.0.1"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Clientes.WebApi.csproj",
+            "snippet": "System.Diagnostics.DiagnosticSource, 8.0.1\n\nRecommendation:\n\nRemove System.Diagnostics.DiagnosticSource, and replace with new package System.Diagnostics.DiagnosticSource 10.0.1",
+            "protectedSnippet": "System.Diagnostics.DiagnosticSource, 8.0.1\n\nRecommendation:\n\nRemove System.Diagnostics.DiagnosticSource, and replace with new package System.Diagnostics.DiagnosticSource 10.0.1",
+            "label": "System.Diagnostics.DiagnosticSource 8.0.1",
+            "properties": {
+              "PackageId": "System.Diagnostics.DiagnosticSource",
+              "PackageVersion": "8.0.1",
+              "PackageNewVersion": "10.0.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "acad1509-f69b-4a66-8b4c-2b588c9dadd8",
+          "ruleId": "NuGet.0003",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Memory, 4.5.5\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "System.Memory, 4.5.5\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Clientes.WebApi.csproj",
+            "snippet": "System.Memory, 4.5.5\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "System.Memory, 4.5.5\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "System.Memory 4.5.5",
+            "properties": {
+              "PackageId": "System.Memory",
+              "PackageVersion": "4.5.5",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "601fad93-2686-4b7d-9aa9-a50081db33cc",
+          "ruleId": "NuGet.0003",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Numerics.Vectors, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "System.Numerics.Vectors, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Clientes.WebApi.csproj",
+            "snippet": "System.Numerics.Vectors, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "System.Numerics.Vectors, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "System.Numerics.Vectors 4.5.0",
+            "properties": {
+              "PackageId": "System.Numerics.Vectors",
+              "PackageVersion": "4.5.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "d60f71f3-2f5d-495e-a0e7-7647fcee2d2a",
+          "ruleId": "NuGet.0002",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Runtime.CompilerServices.Unsafe, 6.0.0\n\nRecommendation:\n\nRemove System.Runtime.CompilerServices.Unsafe, and replace with new package System.Runtime.CompilerServices.Unsafe 6.1.2",
+              "protected": "System.Runtime.CompilerServices.Unsafe, 6.0.0\n\nRecommendation:\n\nRemove System.Runtime.CompilerServices.Unsafe, and replace with new package System.Runtime.CompilerServices.Unsafe 6.1.2"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Clientes.WebApi.csproj",
+            "snippet": "System.Runtime.CompilerServices.Unsafe, 6.0.0\n\nRecommendation:\n\nRemove System.Runtime.CompilerServices.Unsafe, and replace with new package System.Runtime.CompilerServices.Unsafe 6.1.2",
+            "protectedSnippet": "System.Runtime.CompilerServices.Unsafe, 6.0.0\n\nRecommendation:\n\nRemove System.Runtime.CompilerServices.Unsafe, and replace with new package System.Runtime.CompilerServices.Unsafe 6.1.2",
+            "label": "System.Runtime.CompilerServices.Unsafe 6.0.0",
+            "properties": {
+              "PackageId": "System.Runtime.CompilerServices.Unsafe",
+              "PackageVersion": "6.0.0",
+              "PackageNewVersion": "6.1.2",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "91ed72b3-3dd4-41f2-9985-78cb8a6729c9",
+          "ruleId": "NuGet.0003",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Threading.Tasks.Extensions, 4.5.4\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "System.Threading.Tasks.Extensions, 4.5.4\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Clientes.WebApi.csproj",
+            "snippet": "System.Threading.Tasks.Extensions, 4.5.4\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "System.Threading.Tasks.Extensions, 4.5.4\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "System.Threading.Tasks.Extensions 4.5.4",
+            "properties": {
+              "PackageId": "System.Threading.Tasks.Extensions",
+              "PackageVersion": "4.5.4",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "893727bb-6408-49e5-aa70-7ff559556eed",
+          "ruleId": "Project.0001",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Clientes.WebApi\\Clientes.WebApi.csproj"
+          }
+        },
+        {
+          "incidentId": "a555890d-12a4-4d0f-9b88-fc12fc3c8d9f",
+          "ruleId": "Project.0002",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: .NETFramework,Version=v4.8.1\nRecommended target framework: net10.0",
+              "protected": "Current target framework: .NETFramework,Version=v4.8.1\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Clientes.WebApi.csproj",
+            "snippet": "Current target framework: .NETFramework,Version=v4.8.1\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: .NETFramework,Version=v4.8.1\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": ".NETFramework,Version=v4.8.1",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "25549153-9e40-4bfc-b3e6-b1f81ac89cd8",
+          "ruleId": "Feature.0006",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs"
+          }
+        },
+        {
+          "incidentId": "93075ef1-c7b5-480f-8cdf-f602af7fb74f",
+          "ruleId": "Feature.0004",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Clientes.WebApi\\Repositories\\EF\\ClientesDbContext.cs"
+          }
+        },
+        {
+          "incidentId": "9a76b520-0aa5-47d0-bc0f-e90b54520123",
+          "ruleId": "Feature.1000",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Clientes.WebApi\\Global.asax.cs"
+          }
+        },
+        {
+          "incidentId": "77eac0a6-b0bd-4019-b844-b2e90abebde9",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.IHttpActionResult is no longer supported. Use Microsoft.AspNetCore.Mvc.IActionResult instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public IHttpActionResult Get()",
+              "protected": "T:System.Web.Http.IHttpActionResult"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\HealthCheckController.cs",
+            "snippet": "public IHttpActionResult Get()",
+            "protectedSnippet": "T:System.Web.Http.IHttpActionResult",
+            "label": "T:System.Web.Http.IHttpActionResult",
+            "line": 10,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "b0725956-c99d-4658-8cd7-4a5647407741",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpGet",
+              "protected": "M:System.Web.Http.HttpGetAttribute.#ctor"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\HealthCheckController.cs",
+            "snippet": "HttpGet",
+            "protectedSnippet": "M:System.Web.Http.HttpGetAttribute.#ctor",
+            "label": "M:System.Web.Http.HttpGetAttribute.#ctor",
+            "line": 10,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "f3d5c2b5-db41-4bbc-b102-dceca09caaac",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.HttpGetAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.HttpGetAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpGet",
+              "protected": "T:System.Web.Http.HttpGetAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\HealthCheckController.cs",
+            "snippet": "HttpGet",
+            "protectedSnippet": "T:System.Web.Http.HttpGetAttribute",
+            "label": "T:System.Web.Http.HttpGetAttribute",
+            "line": 10,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "7bce62db-9aa5-4957-a242-bc186a53d4b2",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "ApiController",
+              "protected": "M:System.Web.Http.ApiController.#ctor"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\HealthCheckController.cs",
+            "snippet": "ApiController",
+            "protectedSnippet": "M:System.Web.Http.ApiController.#ctor",
+            "label": "M:System.Web.Http.ApiController.#ctor",
+            "line": 8,
+            "column": 41
+          }
+        },
+        {
+          "incidentId": "2713f9ea-ae93-47ba-ba16-1a0fdb1b1923",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.ApiController is no longer supported. Use Microsoft.AspNetCore.Mvc.ControllerBase instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "ApiController",
+              "protected": "T:System.Web.Http.ApiController"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\HealthCheckController.cs",
+            "snippet": "ApiController",
+            "protectedSnippet": "T:System.Web.Http.ApiController",
+            "label": "T:System.Web.Http.ApiController",
+            "line": 8,
+            "column": 41
+          }
+        },
+        {
+          "incidentId": "c8c8a1ea-ecf7-4b7a-84b4-4286b4f67116",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "RoutePrefix(\u0022api/clientes\u0022)",
+              "protected": "M:System.Web.Http.RoutePrefixAttribute.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "RoutePrefix(\u0022api/clientes\u0022)",
+            "protectedSnippet": "M:System.Web.Http.RoutePrefixAttribute.#ctor(System.String)",
+            "label": "M:System.Web.Http.RoutePrefixAttribute.#ctor(System.String)",
+            "line": 7,
+            "column": 5
+          }
+        },
+        {
+          "incidentId": "b6c30baa-7b80-410a-b339-dad1179db155",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "RoutePrefix(\u0022api/clientes\u0022)",
+              "protected": "T:System.Web.Http.RoutePrefixAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "RoutePrefix(\u0022api/clientes\u0022)",
+            "protectedSnippet": "T:System.Web.Http.RoutePrefixAttribute",
+            "label": "T:System.Web.Http.RoutePrefixAttribute",
+            "line": 7,
+            "column": 5
+          }
+        },
+        {
+          "incidentId": "2ce2a62b-cbb7-48ad-abc3-e1a58ac8b1bc",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "FromBody",
+              "protected": "M:System.Web.Http.FromBodyAttribute.#ctor"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "FromBody",
+            "protectedSnippet": "M:System.Web.Http.FromBodyAttribute.#ctor",
+            "label": "M:System.Web.Http.FromBodyAttribute.#ctor",
+            "line": 76,
+            "column": 53
+          }
+        },
+        {
+          "incidentId": "190ff5ab-ee19-4642-93e0-efe3c20d6b77",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.FromBodyAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.FromBodyAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "FromBody",
+              "protected": "T:System.Web.Http.FromBodyAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "FromBody",
+            "protectedSnippet": "T:System.Web.Http.FromBodyAttribute",
+            "label": "T:System.Web.Http.FromBodyAttribute",
+            "line": 76,
+            "column": 53
+          }
+        },
+        {
+          "incidentId": "fb168f7e-0097-4c0e-8daa-2e1730f6898c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Route(\u0022\u0022)",
+              "protected": "M:System.Web.Http.RouteAttribute.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "Route(\u0022\u0022)",
+            "protectedSnippet": "M:System.Web.Http.RouteAttribute.#ctor(System.String)",
+            "label": "M:System.Web.Http.RouteAttribute.#ctor(System.String)",
+            "line": 75,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "a78a0b44-4d86-47de-b540-dfa9b5d451aa",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.RouteAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.RouteAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Route(\u0022\u0022)",
+              "protected": "T:System.Web.Http.RouteAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "Route(\u0022\u0022)",
+            "protectedSnippet": "T:System.Web.Http.RouteAttribute",
+            "label": "T:System.Web.Http.RouteAttribute",
+            "line": 75,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "497ae1b4-e203-4220-9a71-ad6a36b5fd56",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpPost",
+              "protected": "M:System.Web.Http.HttpPostAttribute.#ctor"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "HttpPost",
+            "protectedSnippet": "M:System.Web.Http.HttpPostAttribute.#ctor",
+            "label": "M:System.Web.Http.HttpPostAttribute.#ctor",
+            "line": 74,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "81edee91-2192-462d-9dd1-7b13fa67f412",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.HttpPostAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.HttpPostAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpPost",
+              "protected": "T:System.Web.Http.HttpPostAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "HttpPost",
+            "protectedSnippet": "T:System.Web.Http.HttpPostAttribute",
+            "label": "T:System.Web.Http.HttpPostAttribute",
+            "line": 74,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "b79d4d99-bf9a-4fbb-a0e4-c10990af6d20",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Route(\u0022{id:long}\u0022)",
+              "protected": "M:System.Web.Http.RouteAttribute.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "Route(\u0022{id:long}\u0022)",
+            "protectedSnippet": "M:System.Web.Http.RouteAttribute.#ctor(System.String)",
+            "label": "M:System.Web.Http.RouteAttribute.#ctor(System.String)",
+            "line": 64,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "8eabc06a-1036-4c8a-9725-0986b2ec0519",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.RouteAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.RouteAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Route(\u0022{id:long}\u0022)",
+              "protected": "T:System.Web.Http.RouteAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "Route(\u0022{id:long}\u0022)",
+            "protectedSnippet": "T:System.Web.Http.RouteAttribute",
+            "label": "T:System.Web.Http.RouteAttribute",
+            "line": 64,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "ace4254d-6914-4929-8e78-44a0ac8510de",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpDelete",
+              "protected": "M:System.Web.Http.HttpDeleteAttribute.#ctor"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "HttpDelete",
+            "protectedSnippet": "M:System.Web.Http.HttpDeleteAttribute.#ctor",
+            "label": "M:System.Web.Http.HttpDeleteAttribute.#ctor",
+            "line": 63,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "ce34e395-e011-44a7-82a7-7dcd3243d29e",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpDelete",
+              "protected": "T:System.Web.Http.HttpDeleteAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "HttpDelete",
+            "protectedSnippet": "T:System.Web.Http.HttpDeleteAttribute",
+            "label": "T:System.Web.Http.HttpDeleteAttribute",
+            "line": 63,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "819671cd-1b91-4b89-97ee-1b65a2fa159b",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return NotFound();",
+              "protected": "T:System.Web.Http.Results.NotFoundResult"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "return NotFound();",
+            "protectedSnippet": "T:System.Web.Http.Results.NotFoundResult",
+            "label": "T:System.Web.Http.Results.NotFoundResult",
+            "line": 71,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "ec303b55-c9fa-4b03-b821-3221bea44d74",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return NotFound();",
+              "protected": "M:System.Web.Http.ApiController.NotFound"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "return NotFound();",
+            "protectedSnippet": "M:System.Web.Http.ApiController.NotFound",
+            "label": "M:System.Web.Http.ApiController.NotFound",
+            "line": 71,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "1adc388f-fe02-4e04-8879-fff39f61cbc1",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Ok();",
+              "protected": "T:System.Web.Http.Results.OkResult"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "return Ok();",
+            "protectedSnippet": "T:System.Web.Http.Results.OkResult",
+            "label": "T:System.Web.Http.Results.OkResult",
+            "line": 69,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "ed9f3deb-b0c9-4b68-a6af-ddc3fdd071cb",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return Ok();",
+              "protected": "M:System.Web.Http.ApiController.Ok"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "return Ok();",
+            "protectedSnippet": "M:System.Web.Http.ApiController.Ok",
+            "label": "M:System.Web.Http.ApiController.Ok",
+            "line": 69,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "161c6420-0f75-4751-9fa0-56a26b0bb4c0",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Route(\u0022contar\u0022)",
+              "protected": "M:System.Web.Http.RouteAttribute.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "Route(\u0022contar\u0022)",
+            "protectedSnippet": "M:System.Web.Http.RouteAttribute.#ctor(System.String)",
+            "label": "M:System.Web.Http.RouteAttribute.#ctor(System.String)",
+            "line": 56,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "fdfbd0f9-8fca-464e-af24-78528be6b6cd",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.RouteAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.RouteAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Route(\u0022contar\u0022)",
+              "protected": "T:System.Web.Http.RouteAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "Route(\u0022contar\u0022)",
+            "protectedSnippet": "T:System.Web.Http.RouteAttribute",
+            "label": "T:System.Web.Http.RouteAttribute",
+            "line": 56,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "117f7f69-4f39-4062-b801-5013367776cf",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpGet",
+              "protected": "M:System.Web.Http.HttpGetAttribute.#ctor"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "HttpGet",
+            "protectedSnippet": "M:System.Web.Http.HttpGetAttribute.#ctor",
+            "label": "M:System.Web.Http.HttpGetAttribute.#ctor",
+            "line": 55,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "f147711f-c20f-4a32-b5af-197be6b9574f",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.HttpGetAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.HttpGetAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpGet",
+              "protected": "T:System.Web.Http.HttpGetAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "HttpGet",
+            "protectedSnippet": "T:System.Web.Http.HttpGetAttribute",
+            "label": "T:System.Web.Http.HttpGetAttribute",
+            "line": 55,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "4434487c-d274-49e2-b797-3078139e0ca2",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "FromUri",
+              "protected": "M:System.Web.Http.FromUriAttribute.#ctor"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "FromUri",
+            "protectedSnippet": "M:System.Web.Http.FromUriAttribute.#ctor",
+            "label": "M:System.Web.Http.FromUriAttribute.#ctor",
+            "line": 45,
+            "column": 60
+          }
+        },
+        {
+          "incidentId": "7bf1c456-fa95-47d9-ba6a-9ed9294932df",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.FromUriAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.FromQueryAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "FromUri",
+              "protected": "T:System.Web.Http.FromUriAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "FromUri",
+            "protectedSnippet": "T:System.Web.Http.FromUriAttribute",
+            "label": "T:System.Web.Http.FromUriAttribute",
+            "line": 45,
+            "column": 60
+          }
+        },
+        {
+          "incidentId": "cf34b6ac-17a1-46e5-958a-a8fe7a4fe9fc",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Route(\u0022\u0022)",
+              "protected": "M:System.Web.Http.RouteAttribute.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "Route(\u0022\u0022)",
+            "protectedSnippet": "M:System.Web.Http.RouteAttribute.#ctor(System.String)",
+            "label": "M:System.Web.Http.RouteAttribute.#ctor(System.String)",
+            "line": 44,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "5f0846dd-b8b8-4cee-ac9e-d697ab24d88a",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.RouteAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.RouteAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Route(\u0022\u0022)",
+              "protected": "T:System.Web.Http.RouteAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "Route(\u0022\u0022)",
+            "protectedSnippet": "T:System.Web.Http.RouteAttribute",
+            "label": "T:System.Web.Http.RouteAttribute",
+            "line": 44,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "997d4bf6-272b-4655-97d9-6288b9b51ace",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpGet",
+              "protected": "M:System.Web.Http.HttpGetAttribute.#ctor"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "HttpGet",
+            "protectedSnippet": "M:System.Web.Http.HttpGetAttribute.#ctor",
+            "label": "M:System.Web.Http.HttpGetAttribute.#ctor",
+            "line": 43,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "e76ec02d-7af7-4821-9fa3-9e213cee075f",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.HttpGetAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.HttpGetAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpGet",
+              "protected": "T:System.Web.Http.HttpGetAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "HttpGet",
+            "protectedSnippet": "T:System.Web.Http.HttpGetAttribute",
+            "label": "T:System.Web.Http.HttpGetAttribute",
+            "line": 43,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "a12433a1-543f-414c-846e-fd8455a8fe7c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return NotFound();",
+              "protected": "T:System.Web.Http.Results.NotFoundResult"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "return NotFound();",
+            "protectedSnippet": "T:System.Web.Http.Results.NotFoundResult",
+            "label": "T:System.Web.Http.Results.NotFoundResult",
+            "line": 50,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "05cdb303-07c9-4cee-88a9-f1740d6ae04b",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return NotFound();",
+              "protected": "M:System.Web.Http.ApiController.NotFound"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "return NotFound();",
+            "protectedSnippet": "M:System.Web.Http.ApiController.NotFound",
+            "label": "M:System.Web.Http.ApiController.NotFound",
+            "line": 50,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "247cd59e-d3ff-4be8-85aa-0eebff7987d4",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Route(\u0022{id:long}\u0022)",
+              "protected": "M:System.Web.Http.RouteAttribute.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "Route(\u0022{id:long}\u0022)",
+            "protectedSnippet": "M:System.Web.Http.RouteAttribute.#ctor(System.String)",
+            "label": "M:System.Web.Http.RouteAttribute.#ctor(System.String)",
+            "line": 32,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "d6ab8a2b-adf5-49bc-9ef8-6aa828be66e9",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.RouteAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.RouteAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Route(\u0022{id:long}\u0022)",
+              "protected": "T:System.Web.Http.RouteAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "Route(\u0022{id:long}\u0022)",
+            "protectedSnippet": "T:System.Web.Http.RouteAttribute",
+            "label": "T:System.Web.Http.RouteAttribute",
+            "line": 32,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "f352e3fd-53f8-4a2a-95dc-e88806d2318f",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpGet",
+              "protected": "M:System.Web.Http.HttpGetAttribute.#ctor"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "HttpGet",
+            "protectedSnippet": "M:System.Web.Http.HttpGetAttribute.#ctor",
+            "label": "M:System.Web.Http.HttpGetAttribute.#ctor",
+            "line": 31,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "3d6029fa-db38-492f-8006-9ba05d5754c6",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.HttpGetAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.HttpGetAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpGet",
+              "protected": "T:System.Web.Http.HttpGetAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "HttpGet",
+            "protectedSnippet": "T:System.Web.Http.HttpGetAttribute",
+            "label": "T:System.Web.Http.HttpGetAttribute",
+            "line": 31,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "4b7ebaae-612b-493d-8c10-a938402b449d",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return NotFound();",
+              "protected": "T:System.Web.Http.Results.NotFoundResult"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "return NotFound();",
+            "protectedSnippet": "T:System.Web.Http.Results.NotFoundResult",
+            "label": "T:System.Web.Http.Results.NotFoundResult",
+            "line": 38,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "4c1180d2-862e-41f2-9146-f1bdd9e806bd",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return NotFound();",
+              "protected": "M:System.Web.Http.ApiController.NotFound"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "return NotFound();",
+            "protectedSnippet": "M:System.Web.Http.ApiController.NotFound",
+            "label": "M:System.Web.Http.ApiController.NotFound",
+            "line": 38,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "c70cc02b-6437-432e-a071-1c2f37bab203",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Route(\u0022\u0022)",
+              "protected": "M:System.Web.Http.RouteAttribute.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "Route(\u0022\u0022)",
+            "protectedSnippet": "M:System.Web.Http.RouteAttribute.#ctor(System.String)",
+            "label": "M:System.Web.Http.RouteAttribute.#ctor(System.String)",
+            "line": 18,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "ec888e0c-815a-4f36-93cf-a40ae8b59cfb",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.RouteAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.RouteAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Route(\u0022\u0022)",
+              "protected": "T:System.Web.Http.RouteAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "Route(\u0022\u0022)",
+            "protectedSnippet": "T:System.Web.Http.RouteAttribute",
+            "label": "T:System.Web.Http.RouteAttribute",
+            "line": 18,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "d4711a1e-a178-4cc6-8e54-b672f926f76b",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpGet",
+              "protected": "M:System.Web.Http.HttpGetAttribute.#ctor"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "HttpGet",
+            "protectedSnippet": "M:System.Web.Http.HttpGetAttribute.#ctor",
+            "label": "M:System.Web.Http.HttpGetAttribute.#ctor",
+            "line": 17,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "fd2a5d67-e1d0-4019-b81b-d345450264a6",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.HttpGetAttribute is no longer supported. Use Microsoft.AspNetCore.Mvc.HttpGetAttribute instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpGet",
+              "protected": "T:System.Web.Http.HttpGetAttribute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "HttpGet",
+            "protectedSnippet": "T:System.Web.Http.HttpGetAttribute",
+            "label": "T:System.Web.Http.HttpGetAttribute",
+            "line": 17,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "1d826265-52e8-4e41-9f0c-7e8b818ef6a2",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return NotFound();",
+              "protected": "T:System.Web.Http.Results.NotFoundResult"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "return NotFound();",
+            "protectedSnippet": "T:System.Web.Http.Results.NotFoundResult",
+            "label": "T:System.Web.Http.Results.NotFoundResult",
+            "line": 25,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "8b4a51fb-e219-4722-8256-512561273260",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return NotFound();",
+              "protected": "M:System.Web.Http.ApiController.NotFound"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "return NotFound();",
+            "protectedSnippet": "M:System.Web.Http.ApiController.NotFound",
+            "label": "M:System.Web.Http.ApiController.NotFound",
+            "line": 25,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "74ff5840-d526-4d25-9148-b059f6b5e773",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public ClientesController(IClienteService clienteService)\r\n        {\r\n            _clienteService = clienteService;\r\n        }",
+              "protected": "M:System.Web.Http.ApiController.#ctor"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "public ClientesController(IClienteService clienteService)\r\n        {\r\n            _clienteService = clienteService;\r\n        }",
+            "protectedSnippet": "M:System.Web.Http.ApiController.#ctor",
+            "label": "M:System.Web.Http.ApiController.#ctor",
+            "line": 12,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "06ed8363-0a82-4575-9c6f-65ab32a54299",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public ClientesController(IClienteService clienteService)\r\n        {\r\n            _clienteService = clienteService;\r\n        }",
+              "protected": "M:System.Web.Http.ApiController.#ctor"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "public ClientesController(IClienteService clienteService)\r\n        {\r\n            _clienteService = clienteService;\r\n        }",
+            "protectedSnippet": "M:System.Web.Http.ApiController.#ctor",
+            "label": "M:System.Web.Http.ApiController.#ctor",
+            "line": 12,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "fefa7fd5-28be-4b19-a6ff-9cd3283d9872",
+          "ruleId": "Api.0001",
+          "description": "System.Web.Http.ApiController is no longer supported. Use Microsoft.AspNetCore.Mvc.ControllerBase instead.\n\nAPI is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "ApiController",
+              "protected": "T:System.Web.Http.ApiController"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Controllers\\ClientesController.cs",
+            "snippet": "ApiController",
+            "protectedSnippet": "T:System.Web.Http.ApiController",
+            "label": "T:System.Web.Http.ApiController",
+            "line": 8,
+            "column": 38
+          }
+        },
+        {
+          "incidentId": "2af81f83-1c9b-4d53-87c4-3c01d9d1e86b",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "GlobalConfiguration.Configure(WebApiConfig.Register);",
+              "protected": "T:System.Web.Http.GlobalConfiguration"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Global.asax.cs",
+            "snippet": "GlobalConfiguration.Configure(WebApiConfig.Register);",
+            "protectedSnippet": "T:System.Web.Http.GlobalConfiguration",
+            "label": "T:System.Web.Http.GlobalConfiguration",
+            "line": 9,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "546f3b43-9e2b-4c9f-934e-64125994072a",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "GlobalConfiguration.Configure(WebApiConfig.Register);",
+              "protected": "M:System.Web.Http.GlobalConfiguration.Configure(System.Action{System.Web.Http.HttpConfiguration})"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Global.asax.cs",
+            "snippet": "GlobalConfiguration.Configure(WebApiConfig.Register);",
+            "protectedSnippet": "M:System.Web.Http.GlobalConfiguration.Configure(System.Action{System.Web.Http.HttpConfiguration})",
+            "label": "M:System.Web.Http.GlobalConfiguration.Configure(System.Action{System.Web.Http.HttpConfiguration})",
+            "line": 9,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "ae3832b6-1add-4aac-884e-4a329bd23a40",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpApplication",
+              "protected": "M:System.Web.HttpApplication.#ctor"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Global.asax.cs",
+            "snippet": "HttpApplication",
+            "protectedSnippet": "M:System.Web.HttpApplication.#ctor",
+            "label": "M:System.Web.HttpApplication.#ctor",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 5,
+            "column": 37
+          }
+        },
+        {
+          "incidentId": "ba3c6d29-f251-4754-8aa0-a99016216eb0",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpApplication",
+              "protected": "T:System.Web.HttpApplication"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\Global.asax.cs",
+            "snippet": "HttpApplication",
+            "protectedSnippet": "T:System.Web.HttpApplication",
+            "label": "T:System.Web.HttpApplication",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 5,
+            "column": 37
+          }
+        },
+        {
+          "incidentId": "4d0495d9-6469-457f-8338-bf7f9a1f285d",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public static void Register(HttpConfiguration config)",
+              "protected": "T:System.Web.Http.HttpConfiguration"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "public static void Register(HttpConfiguration config)",
+            "protectedSnippet": "T:System.Web.Http.HttpConfiguration",
+            "label": "T:System.Web.Http.HttpConfiguration",
+            "line": 16,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "67d81ef9-d5f8-4990-9f6f-32739867ca31",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Http.RouteParameter"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Http.RouteParameter",
+            "label": "T:System.Web.Http.RouteParameter",
+            "line": 47,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "dfa2645b-b4bb-482a-afe9-c3ee965999e6",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Http.RouteParameter"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Http.RouteParameter",
+            "label": "T:System.Web.Http.RouteParameter",
+            "line": 47,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f66c6591-7336-4f90-a2ff-c4cb7954ebd7",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "F:System.Web.Http.RouteParameter.Optional"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "F:System.Web.Http.RouteParameter.Optional",
+            "label": "F:System.Web.Http.RouteParameter.Optional",
+            "line": 47,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "4bf7cdba-740f-4383-8f63-a9a1697a709e",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Http.RouteParameter"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Http.RouteParameter",
+            "label": "T:System.Web.Http.RouteParameter",
+            "line": 47,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "142b8328-ffe1-475d-b02d-4f3b8722b3ef",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Http.HttpRouteCollection"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Http.HttpRouteCollection",
+            "label": "T:System.Web.Http.HttpRouteCollection",
+            "line": 47,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "16a6c250-f914-4105-8a31-237345635db5",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "P:System.Web.Http.HttpConfiguration.Routes"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "P:System.Web.Http.HttpConfiguration.Routes",
+            "label": "P:System.Web.Http.HttpConfiguration.Routes",
+            "line": 47,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "fce78f0c-1fa4-4a83-84ea-1ea19725c5f1",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Http.HttpRouteCollectionExtensions"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Http.HttpRouteCollectionExtensions",
+            "label": "T:System.Web.Http.HttpRouteCollectionExtensions",
+            "line": 47,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "ead5d0a7-ff35-4e47-8450-337c3920e401",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "T:System.Web.Http.Routing.IHttpRoute"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "T:System.Web.Http.Routing.IHttpRoute",
+            "label": "T:System.Web.Http.Routing.IHttpRoute",
+            "line": 47,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f17cf4c3-34f9-4b98-88dc-f2caf4f4d60b",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+              "protected": "M:System.Web.Http.HttpRouteCollectionExtensions.MapHttpRoute(System.Web.Http.HttpRouteCollection,System.String,System.String,System.Object)"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.Routes.MapHttpRoute(\r\n                name: \u0022DefaultApi\u0022,\r\n                routeTemplate: \u0022api/{controller}/{id}\u0022,\r\n                defaults: new { id = RouteParameter.Optional }\r\n            );",
+            "protectedSnippet": "M:System.Web.Http.HttpRouteCollectionExtensions.MapHttpRoute(System.Web.Http.HttpRouteCollection,System.String,System.String,System.Object)",
+            "label": "M:System.Web.Http.HttpRouteCollectionExtensions.MapHttpRoute(System.Web.Http.HttpRouteCollection,System.String,System.String,System.Object)",
+            "line": 47,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "124ed371-c57f-4861-8279-d76407f60a1d",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.MapHttpAttributeRoutes();",
+              "protected": "T:System.Web.Http.HttpConfigurationExtensions"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.MapHttpAttributeRoutes();",
+            "protectedSnippet": "T:System.Web.Http.HttpConfigurationExtensions",
+            "label": "T:System.Web.Http.HttpConfigurationExtensions",
+            "line": 45,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "51a60f4c-b468-4da1-862b-d1fc573f2342",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.MapHttpAttributeRoutes();",
+              "protected": "M:System.Web.Http.HttpConfigurationExtensions.MapHttpAttributeRoutes(System.Web.Http.HttpConfiguration)"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "config.MapHttpAttributeRoutes();",
+            "protectedSnippet": "M:System.Web.Http.HttpConfigurationExtensions.MapHttpAttributeRoutes(System.Web.Http.HttpConfiguration)",
+            "label": "M:System.Web.Http.HttpConfigurationExtensions.MapHttpAttributeRoutes(System.Web.Http.HttpConfiguration)",
+            "line": 45,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "91053c57-d12d-4010-9e55-3c6170138f52",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNet.WebApi.Client, 6.0.0. Add package reference to Microsoft.AspNet.WebApi.Client, 6.0.0",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "jsonFormatter.SerializerSettings.Formatting = Formatting.Indented;",
+              "protected": "P:System.Net.Http.Formatting.BaseJsonMediaTypeFormatter.SerializerSettings"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "jsonFormatter.SerializerSettings.Formatting = Formatting.Indented;",
+            "protectedSnippet": "P:System.Net.Http.Formatting.BaseJsonMediaTypeFormatter.SerializerSettings",
+            "label": "P:System.Net.Http.Formatting.BaseJsonMediaTypeFormatter.SerializerSettings",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.Client",
+              "PackageNewVersion": "6.0.0"
+            },
+            "line": 42,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "0a0a2887-07f3-49c7-a7d9-b03529f25b81",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNet.WebApi.Client, 6.0.0. Add package reference to Microsoft.AspNet.WebApi.Client, 6.0.0",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();",
+              "protected": "P:System.Net.Http.Formatting.BaseJsonMediaTypeFormatter.SerializerSettings"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();",
+            "protectedSnippet": "P:System.Net.Http.Formatting.BaseJsonMediaTypeFormatter.SerializerSettings",
+            "label": "P:System.Net.Http.Formatting.BaseJsonMediaTypeFormatter.SerializerSettings",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.Client",
+              "PackageNewVersion": "6.0.0"
+            },
+            "line": 41,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "2da63382-fc89-47d3-a865-c92d94c95244",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNet.WebApi.Client, 6.0.0. Add package reference to Microsoft.AspNet.WebApi.Client, 6.0.0",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var jsonFormatter = config.Formatters.JsonFormatter;",
+              "protected": "T:System.Net.Http.Formatting.MediaTypeFormatterCollection"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "var jsonFormatter = config.Formatters.JsonFormatter;",
+            "protectedSnippet": "T:System.Net.Http.Formatting.MediaTypeFormatterCollection",
+            "label": "T:System.Net.Http.Formatting.MediaTypeFormatterCollection",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.Client",
+              "PackageNewVersion": "6.0.0"
+            },
+            "line": 39,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "19deaed2-2de2-470a-8eef-a5f69b451d17",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var jsonFormatter = config.Formatters.JsonFormatter;",
+              "protected": "P:System.Web.Http.HttpConfiguration.Formatters"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "var jsonFormatter = config.Formatters.JsonFormatter;",
+            "protectedSnippet": "P:System.Web.Http.HttpConfiguration.Formatters",
+            "label": "P:System.Web.Http.HttpConfiguration.Formatters",
+            "line": 39,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "6c6e6810-64a2-463a-9565-653886d062c6",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNet.WebApi.Client, 6.0.0. Add package reference to Microsoft.AspNet.WebApi.Client, 6.0.0",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var jsonFormatter = config.Formatters.JsonFormatter;",
+              "protected": "T:System.Net.Http.Formatting.JsonMediaTypeFormatter"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "var jsonFormatter = config.Formatters.JsonFormatter;",
+            "protectedSnippet": "T:System.Net.Http.Formatting.JsonMediaTypeFormatter",
+            "label": "T:System.Net.Http.Formatting.JsonMediaTypeFormatter",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.Client",
+              "PackageNewVersion": "6.0.0"
+            },
+            "line": 39,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b824a3ac-a4cb-4ecf-8452-dcc070a0344f",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNet.WebApi.Client, 6.0.0. Add package reference to Microsoft.AspNet.WebApi.Client, 6.0.0",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var jsonFormatter = config.Formatters.JsonFormatter;",
+              "protected": "P:System.Net.Http.Formatting.MediaTypeFormatterCollection.JsonFormatter"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "var jsonFormatter = config.Formatters.JsonFormatter;",
+            "protectedSnippet": "P:System.Net.Http.Formatting.MediaTypeFormatterCollection.JsonFormatter",
+            "label": "P:System.Net.Http.Formatting.MediaTypeFormatterCollection.JsonFormatter",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.Client",
+              "PackageNewVersion": "6.0.0"
+            },
+            "line": 39,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "7be4fd28-9fb8-44a2-a5a2-5a5ad0365e42",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "GlobalConfiguration.Configuration.DependencyResolver = resolver;",
+              "protected": "T:System.Web.Http.GlobalConfiguration"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "GlobalConfiguration.Configuration.DependencyResolver = resolver;",
+            "protectedSnippet": "T:System.Web.Http.GlobalConfiguration",
+            "label": "T:System.Web.Http.GlobalConfiguration",
+            "line": 36,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "a7a175fc-ac3a-4e27-b087-fcafdeb8f38f",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "GlobalConfiguration.Configuration.DependencyResolver = resolver;",
+              "protected": "T:System.Web.Http.HttpConfiguration"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "GlobalConfiguration.Configuration.DependencyResolver = resolver;",
+            "protectedSnippet": "T:System.Web.Http.HttpConfiguration",
+            "label": "T:System.Web.Http.HttpConfiguration",
+            "line": 36,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "9e5f5cf6-010a-41ff-a5c3-403a4bbdf21a",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "GlobalConfiguration.Configuration.DependencyResolver = resolver;",
+              "protected": "P:System.Web.Http.GlobalConfiguration.Configuration"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "GlobalConfiguration.Configuration.DependencyResolver = resolver;",
+            "protectedSnippet": "P:System.Web.Http.GlobalConfiguration.Configuration",
+            "label": "P:System.Web.Http.GlobalConfiguration.Configuration",
+            "line": 36,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f2df54d9-d292-4245-b2f7-50a6af859899",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "GlobalConfiguration.Configuration.DependencyResolver = resolver;",
+              "protected": "T:System.Web.Http.Dependencies.IDependencyResolver"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "GlobalConfiguration.Configuration.DependencyResolver = resolver;",
+            "protectedSnippet": "T:System.Web.Http.Dependencies.IDependencyResolver",
+            "label": "T:System.Web.Http.Dependencies.IDependencyResolver",
+            "line": 36,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "9df8a2dc-68fd-48a4-9b3f-e62c1702e161",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "Clientes.WebApi\\Clientes.WebApi.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "GlobalConfiguration.Configuration.DependencyResolver = resolver;",
+              "protected": "P:System.Web.Http.HttpConfiguration.DependencyResolver"
+            },
+            "kind": "File",
+            "path": "Clientes.WebApi\\App_Start\\WebApiConfig.cs",
+            "snippet": "GlobalConfiguration.Configuration.DependencyResolver = resolver;",
+            "protectedSnippet": "P:System.Web.Http.HttpConfiguration.DependencyResolver",
+            "label": "P:System.Web.Http.HttpConfiguration.DependencyResolver",
+            "line": 36,
+            "column": 12
+          }
+        }
+      ],
+      "features": [
+        {
+          "featureId": "SystemWeb",
+          "incidents": [
+            "9df8a2dc-68fd-48a4-9b3f-e62c1702e161",
+            "f2df54d9-d292-4245-b2f7-50a6af859899",
+            "9e5f5cf6-010a-41ff-a5c3-403a4bbdf21a",
+            "a7a175fc-ac3a-4e27-b087-fcafdeb8f38f",
+            "7be4fd28-9fb8-44a2-a5a2-5a5ad0365e42",
+            "19deaed2-2de2-470a-8eef-a5f69b451d17",
+            "51a60f4c-b468-4da1-862b-d1fc573f2342",
+            "124ed371-c57f-4861-8279-d76407f60a1d",
+            "f17cf4c3-34f9-4b98-88dc-f2caf4f4d60b",
+            "ead5d0a7-ff35-4e47-8450-337c3920e401",
+            "fce78f0c-1fa4-4a83-84ea-1ea19725c5f1",
+            "16a6c250-f914-4105-8a31-237345635db5",
+            "142b8328-ffe1-475d-b02d-4f3b8722b3ef",
+            "4bf7cdba-740f-4383-8f63-a9a1697a709e",
+            "f66c6591-7336-4f90-a2ff-c4cb7954ebd7",
+            "dfa2645b-b4bb-482a-afe9-c3ee965999e6",
+            "67d81ef9-d5f8-4990-9f6f-32739867ca31",
+            "4d0495d9-6469-457f-8338-bf7f9a1f285d",
+            "ba3c6d29-f251-4754-8aa0-a99016216eb0",
+            "ae3832b6-1add-4aac-884e-4a329bd23a40",
+            "546f3b43-9e2b-4c9f-934e-64125994072a",
+            "2af81f83-1c9b-4d53-87c4-3c01d9d1e86b",
+            "fefa7fd5-28be-4b19-a6ff-9cd3283d9872",
+            "06ed8363-0a82-4575-9c6f-65ab32a54299",
+            "74ff5840-d526-4d25-9148-b059f6b5e773",
+            "8b4a51fb-e219-4722-8256-512561273260",
+            "1d826265-52e8-4e41-9f0c-7e8b818ef6a2",
+            "fd2a5d67-e1d0-4019-b81b-d345450264a6",
+            "d4711a1e-a178-4cc6-8e54-b672f926f76b",
+            "ec888e0c-815a-4f36-93cf-a40ae8b59cfb",
+            "c70cc02b-6437-432e-a071-1c2f37bab203",
+            "4c1180d2-862e-41f2-9146-f1bdd9e806bd",
+            "4b7ebaae-612b-493d-8c10-a938402b449d",
+            "3d6029fa-db38-492f-8006-9ba05d5754c6",
+            "f352e3fd-53f8-4a2a-95dc-e88806d2318f",
+            "d6ab8a2b-adf5-49bc-9ef8-6aa828be66e9",
+            "247cd59e-d3ff-4be8-85aa-0eebff7987d4",
+            "05cdb303-07c9-4cee-88a9-f1740d6ae04b",
+            "a12433a1-543f-414c-846e-fd8455a8fe7c",
+            "e76ec02d-7af7-4821-9fa3-9e213cee075f",
+            "997d4bf6-272b-4655-97d9-6288b9b51ace",
+            "5f0846dd-b8b8-4cee-ac9e-d697ab24d88a",
+            "cf34b6ac-17a1-46e5-958a-a8fe7a4fe9fc",
+            "7bf1c456-fa95-47d9-ba6a-9ed9294932df",
+            "4434487c-d274-49e2-b797-3078139e0ca2",
+            "f147711f-c20f-4a32-b5af-197be6b9574f",
+            "117f7f69-4f39-4062-b801-5013367776cf",
+            "fdfbd0f9-8fca-464e-af24-78528be6b6cd",
+            "161c6420-0f75-4751-9fa0-56a26b0bb4c0",
+            "ed9f3deb-b0c9-4b68-a6af-ddc3fdd071cb",
+            "1adc388f-fe02-4e04-8879-fff39f61cbc1",
+            "ec303b55-c9fa-4b03-b821-3221bea44d74",
+            "819671cd-1b91-4b89-97ee-1b65a2fa159b",
+            "ce34e395-e011-44a7-82a7-7dcd3243d29e",
+            "ace4254d-6914-4929-8e78-44a0ac8510de",
+            "8eabc06a-1036-4c8a-9725-0986b2ec0519",
+            "b79d4d99-bf9a-4fbb-a0e4-c10990af6d20",
+            "81edee91-2192-462d-9dd1-7b13fa67f412",
+            "497ae1b4-e203-4220-9a71-ad6a36b5fd56",
+            "a78a0b44-4d86-47de-b540-dfa9b5d451aa",
+            "fb168f7e-0097-4c0e-8daa-2e1730f6898c",
+            "190ff5ab-ee19-4642-93e0-efe3c20d6b77",
+            "2ce2a62b-cbb7-48ad-abc3-e1a58ac8b1bc",
+            "b6c30baa-7b80-410a-b339-dad1179db155",
+            "c8c8a1ea-ecf7-4b7a-84b4-4286b4f67116",
+            "2713f9ea-ae93-47ba-ba16-1a0fdb1b1923",
+            "7bce62db-9aa5-4957-a242-bc186a53d4b2",
+            "f3d5c2b5-db41-4bbc-b102-dceca09caaac",
+            "b0725956-c99d-4658-8cd7-4a5647407741",
+            "77eac0a6-b0bd-4019-b844-b2e90abebde9"
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "NuGet.0001": {
+      "id": "NuGet.0001",
+      "isFeature": false,
+      "description": "NuGet package is incompatible with selected target framework.\n\nPackage needs to be upgraded to a version supporting selected project target framework. If there no new package versions supporting new target framework, different package needs to be used and all code needs to be upgraded to new API.",
+      "label": "NuGet package is incompatible",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262529",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0003": {
+      "id": "NuGet.0003",
+      "isFeature": false,
+      "description": "NuGet package functionality is included with framework reference.\n\nPackage needs to be removed.",
+      "label": "NuGet package functionality is included with framework reference",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262609",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0001": {
+      "id": "Project.0001",
+      "isFeature": false,
+      "description": "Project file needs to be converted to SDK-style. Modern .NET framework projects require a change in the project file format and use SDK corresponding to project flavor and functionality.",
+      "label": "Project file needs to be converted to SDK-style",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Feature.0006": {
+      "id": "Feature.0006",
+      "isFeature": true,
+      "description": "Convert from Autofac to ASP.NET Core dependency injection.",
+      "label": "Convert from Autofac to ASP.NET Core dependency injection",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        }
+      ]
+    },
+    "Feature.0004": {
+      "id": "Feature.0004",
+      "isFeature": true,
+      "description": "Classic EntityFramework initialization needs to be adjusted in .NET Core.",
+      "label": "Classic EntityFramework initialization needs to be adjusted in .NET Core",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        }
+      ]
+    },
+    "Feature.1000": {
+      "id": "Feature.1000",
+      "isFeature": true,
+      "description": "Convert application initialization code from Global.asax.cs to .NET Core and clean up Global.asax.cs.",
+      "label": "Convert application initialization code from Global.asax.cs to .NET Core and clean up Global.asax.cs",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0001": {
+      "id": "Api.0001",
+      "isFeature": false,
+      "description": "API is binary incompatible for selected .NET version: affects existing binaries, often requiring recompilation, because the API has changed in a way that prevents older binaries from loading or executing.",
+      "label": "Binary incompatible for selected .NET version",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "isFeature": false,
+      "description": "API is source incompatible for selected .NET version: requires code changes to compile successfully when targeting a new version, such as removing obsolete APIs or changing method signatures.",
+      "label": "Source incompatible for selected .NET version",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "SystemWeb": {
+      "id": "SystemWeb",
+      "isFeature": false,
+      "description": "Legacy ASP.NET Framework APIs for web applications (System.Web.*) that don\u0027t exist in ASP.NET Core due to architectural differences. ASP.NET Core represents a complete redesign of the web framework. Migrate to ASP.NET Core equivalents or consider System.Web.Adapters package for compatibility.",
+      "label": "ASP.NET Framework (System.Web)",
+      "severity": "Mandatory",
+      "effort": 4,
+      "links": [
+        {
+          "title": "Migrate from ASP.NET to ASP.NET Core",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2341905",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
