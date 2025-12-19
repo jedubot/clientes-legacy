@@ -1,25 +1,18 @@
 ﻿using Clientes.WebApi.Interfaces;
 using Clientes.WebApi.Repositories.EF;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
-using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace Clientes.WebApi.Repositories
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository<T>(ClientesDbContext context) : IRepository<T> where T : class
     {
-        protected readonly ClientesDbContext _context;
-        protected readonly DbSet<T> _dbSet;
-
-        public Repository(ClientesDbContext context)
-        {
-            _context = context;
-            _dbSet = context.Set<T>();
-        }
+        protected readonly ClientesDbContext _context = context;
+        protected readonly DbSet<T> _dbSet = context.Set<T>();
 
         public void Add(T entity)
         {

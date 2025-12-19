@@ -1,26 +1,27 @@
 ﻿using Clientes.WebApi.Models;
-using System.Data.Entity.ModelConfiguration;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Clientes.WebApi.Repositories.EF
 {
-    public class ClienteMapping : EntityTypeConfiguration<Cliente>
+    public class ClienteMapping : IEntityTypeConfiguration<Cliente>
     {
-        public ClienteMapping()
+        public void Configure(EntityTypeBuilder<Cliente> builder)
         {
-            ToTable("Clientes");
-            HasKey(c => c.ID);
-            Property(c => c.Cpf)
+            builder.ToTable("Clientes");
+            builder.HasKey(c => c.ID);
+            builder.Property(c => c.Cpf)
                 .IsRequired()
                 .HasMaxLength(11);
-            Property(c => c.Nome)
+            builder.Property(c => c.Nome)
                 .IsRequired()
                 .HasMaxLength(100);
-            Property(c => c.Nascimento)
+            builder.Property(c => c.Nascimento)
                 .IsRequired();
-            Property(c => c.Email)
+            builder.Property(c => c.Email)
                 .IsRequired()
                 .HasMaxLength(100);
-            Property(c => c.CriadoEm)
+            builder.Property(c => c.CriadoEm)
                 .IsRequired();
         }
     }
