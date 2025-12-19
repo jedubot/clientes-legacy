@@ -2,7 +2,7 @@
 
 ## 1. Introdução
 
-Esta aplicação é uma Web API simples que realiza as operaçÕes CRUD para uma única entidade Cliente. 
+Esta aplicação é uma Web API simples que realiza as operações CRUD para uma única entidade Cliente. 
 
 Foi construída utilizando a seguinte infraestrutura:
 
