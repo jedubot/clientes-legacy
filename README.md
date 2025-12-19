@@ -1,6 +1,17 @@
 # Clientes.WebApi   
 
-## 1. Estrutura de Pastas   
+## 1. Introdução
+
+Esta aplicação é uma Web API simples que realiza as operaçÕes CRUD para uma única entidade Cliente. 
+
+Foi construída utilizando a seguinte infraestrutura:
+
+1) Windows 11 Pro
+2) Visual Studio 2026 Enterprise
+3) .NET 10.0
+4) C# 14
+
+## 2. Estrutura de Pastas   
 
 - ./ docs
     - Clientes.WebApi.drawio
@@ -30,21 +41,21 @@
     - Clientes.slnx
 - README.md
 
-## 2. Arquitetura
+## 3. Arquitetura
 
-### 2.1. Apresentação
+### 3.1. Apresentação
 
 #### Controllers/ClientesController.cs
 
 Ponto de entrada da API, recebe requisições HTTP, executa a lógica da aplicação (via serviços) e retorna respostas HTTP.
 
-### 2.2. Serviços
+### 3.2. Serviços
 
 #### Services/ClienteService.cs
 
 Responsável por executar a lógica da aplicação, deixando o Controller responsável somente por lidar com HTTP, rotas e códigos de status. Implementa a interface "Interfaces/IClienteService.cs".
 
-### 2.3. Dados
+### 3.3. Dados
 
 #### Repositories/EF/ClienteDbContext.cs
 
@@ -60,7 +71,7 @@ Ainda no contexto do Entity Framework Core, esta classe mapeia as propriedades d
 
 Esta classe se situa entre a camada de serviço e o DbContext, conferindo à aplicação um jeito limpo, testável e consistente de acessar o banco de dados, abstraindo os detalhes do Entity Framework Core do restante da aplicação. Implementa, de forma genérica, as principais operações de banco de dados, podendo ser reusada pelas entidades da aplicação. Implementa a interface "Interfaces/IRepository.cs".
 
-### 2.4. Domínio
+### 3.4. Domínio
 
 #### Models/Cliente.cs
 
