@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace Clientes.WebApi.Services
 {
-    public class ClienteService : IClienteService
+    public class ClienteService(IRepository<Cliente> clienteRepository) : IClienteService
     {
-        private readonly IRepository<Cliente> _clienteRepository;
-
-        public ClienteService(IRepository<Cliente> clienteRepository)
-        {
-            _clienteRepository = clienteRepository;
-        }
+        private readonly IRepository<Cliente> _clienteRepository = clienteRepository;
 
         public async Task Atualizar(Cliente cliente)
         {
@@ -26,7 +21,7 @@ namespace Clientes.WebApi.Services
             return await _clienteRepository.GetByIDAsync(id);
         }
 
-        public async Task<IList<Cliente>> BuscarPorNome(string nome)
+        public async Task<IList<Cliente>> BuscarPorNomeAsync(string nome)
         {
             return await _clienteRepository.FindAsync(c => c.Nome.Contains(nome));
         }
@@ -48,7 +43,7 @@ namespace Clientes.WebApi.Services
             return false;
         }
 
-        public async Task<IList<Cliente>> ListarTodos()
+        public async Task<IList<Cliente>> ListarTodosAsync()
         {
             return await _clienteRepository.GetAllAsync();
         }

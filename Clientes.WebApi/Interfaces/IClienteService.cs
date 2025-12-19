@@ -6,11 +6,11 @@ namespace Clientes.WebApi.Interfaces
 {
     public interface IClienteService
     {
-        Task<IList<Cliente>> BuscarPorNome(string nome);
+        Task<IList<Cliente>> BuscarPorNomeAsync(string nome);
         Task<Cliente> BuscarPorIDAsync(long id);
         Task<long> ContarClientesAsync();
         Task<bool> DeletarAsync(long id);
-        Task<IList<Cliente>> ListarTodos();
+        Task<IList<Cliente>> ListarTodosAsync();
         Task SalvarAsync(Cliente cliente);
     }
 }

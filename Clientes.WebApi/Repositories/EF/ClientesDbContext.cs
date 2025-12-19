@@ -1,19 +1,17 @@
 ﻿using Clientes.WebApi.Models;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace Clientes.WebApi.Repositories.EF
 {
-    public class ClientesDbContext : DbContext
+    public class ClientesDbContext(DbContextOptions<ClientesDbContext> options) : DbContext(options)
     {
-        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Cliente> Clientes => Set<Cliente>();
 
-        public ClientesDbContext() : base("name=ClientesDbContext")
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-        }
+            base.OnModelCreating(modelBuilder);
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            modelBuilder.Configurations.AddFromAssembly(typeof(ClientesDbContext).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(ClientesDbContext).Assembly);
         }
     }
 }

@@ -6,25 +6,24 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Clientes.WebApi.Controllers
 {
-    [Route("api/clientes")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class ClientesController : ControllerBase
+    public class ClientesController(IClienteService clienteService) : ControllerBase
     {
-        private readonly IClienteService _clienteService;
-
-        public ClientesController(IClienteService clienteService)
-        {
-            _clienteService = clienteService;
-        }
+        private readonly IClienteService _clienteService = clienteService;
 
         [HttpGet]
-        public async Task<ActionResult<List<Cliente>>> ListarTodos()
+        public async Task<ActionResult<List<Cliente>>> Listar([FromQuery] string? nome)
         {
-            var clientes = await _clienteService.ListarTodos();
+            IList<Cliente> clientes;
 
-            if (clientes == null || clientes.Count == 0)
+            if (!string.IsNullOrEmpty(nome))
             {
-                return NotFound();
+                clientes = await _clienteService.BuscarPorNomeAsync(nome);
+            }
+            else
+            {
+                clientes = await _clienteService.ListarTodosAsync();
             }
 
             return Ok(clientes);
@@ -39,17 +38,6 @@ namespace Clientes.WebApi.Controllers
                 return NotFound();
             }
             return Ok(cliente);
-        }
-
-        [HttpGet]
-        public async Task<ActionResult<List<Cliente>>> BuscarPorNome([FromQuery] string nome)
-        {
-            var clientes = await _clienteService.BuscarPorNome(nome);
-            if (clientes == null || clientes.Count == 0)
-            {
-                return NotFound();
-            }
-            return Ok(clientes);
         }
 
         [HttpGet("contar")]
@@ -73,7 +61,7 @@ namespace Clientes.WebApi.Controllers
         public async Task<ActionResult<object>> Salvar([FromBody] Cliente cliente)
         {
             await _clienteService.SalvarAsync(cliente);
-            return Ok(new { cliente.ID });
+            return CreatedAtAction(nameof(BuscarPorID), new { id = cliente.ID }, cliente);
         }
     }
 }
